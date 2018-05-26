@@ -6,3 +6,5 @@ Feature: View plays
   Scenario: View plays
     Given I visit the page
     Then I should see "This is our broadway plays"
+    And I should see
+
