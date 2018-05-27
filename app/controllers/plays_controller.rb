@@ -13,6 +13,6 @@ class PlaysController < ApplicationController
   private
 
   def play_params
-    params.require(:play).permig(:title, :description, :director)
+    params.require(:play).permit(:title, :description, :director)
   end
 end
