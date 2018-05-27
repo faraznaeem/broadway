@@ -7,6 +7,12 @@ class PlaysController < ApplicationController
   end
 
   def create
-    @play = Play.new(params.require(:play).permig(:title, :description, :director))
+    @play = Play.new(play_params)
+  end
+
+  private
+
+  def play_params
+    params.require(:play).permig(:title, :description, :director)
   end
 end
