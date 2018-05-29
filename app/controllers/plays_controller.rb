@@ -25,6 +25,14 @@ before_action :find_play, only:[:show, :edit, :update, :destroy]
 
   end
 
+  def update
+    if @play.update(play_params)
+      redirect_to play_path(@play)
+    else
+      render 'edit'
+    end
+  end
+
   private
 
   def play_params
