@@ -7,7 +7,7 @@ before_action :find_play, only:[:show, :edit, :update, :destroy]
 
   def show
   end
-  
+
   def new
     @play = Play.new
   end
@@ -19,6 +19,10 @@ before_action :find_play, only:[:show, :edit, :update, :destroy]
     else
       render 'new'
     end
+  end
+
+  def edit
+
   end
 
   private
