@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'devise', '~> 4.4', '>= 4.4.3'
 
 
 group :development, :test do
@@ -26,6 +27,7 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'coveralls', require: false
+  gem 'faker'
 end
 
 group :development do
