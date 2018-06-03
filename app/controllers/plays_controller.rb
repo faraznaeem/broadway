@@ -22,7 +22,11 @@ before_action :find_play, only:[:show, :edit, :update, :destroy]
   end
 
   def edit
+  end
 
+  def destroy
+    @play.destroy
+    redirect_to root_path
   end
 
   def update
