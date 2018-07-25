@@ -13,7 +13,7 @@ before_action :find_play, only:[:show, :edit, :update, :destroy]
   def show
   end
 
-  def new 
+  def new
     @play = current_user.plays.build
     @categories = Category.all.map{ |c| [c.name, c.id]}
   end
@@ -49,7 +49,7 @@ before_action :find_play, only:[:show, :edit, :update, :destroy]
   private
 
   def play_params
-    params.require(:play).permit(:title, :description, :director, :category_id)
+    params.require(:play).permit(:title, :description, :director, :category_id, :play_img)
   end
 
   def find_play

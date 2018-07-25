@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'devise', '~> 4.4', '>= 4.4.3'
+gem "paperclip", "~> 6.0.0"
 
 
 group :development, :test do
